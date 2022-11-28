@@ -18,14 +18,14 @@ public class OrderControllerV2 {
     }
 
     @GetMapping("/v2/request")
-    String request(@RequestParam("itemId") String itemId){
+    public String request(@RequestParam("itemId") String itemId){
         log.info(itemId);
         orderService.orderItem(itemId);
         return "ok";
     }
 
     @GetMapping("/v2/no-log")
-    String noLog(){
+    public String noLog(){
         return "ok";
     }
 }
