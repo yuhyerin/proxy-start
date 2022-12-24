@@ -1,4 +1,4 @@
-package hello.proxy.config;
+package hello.proxy.config.v2_dynamicproxy;
 
 import hello.proxy.app.v1.*;
 import hello.proxy.config.v2_dynamicproxy.handler.LogTraceBasicHandler;
